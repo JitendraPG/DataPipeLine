@@ -1,0 +1,32 @@
+{
+  "total_checked": 5212,
+  "total_passed": 4995,
+  "total_failed": 217,
+  "breakdown": {
+    "orders": {
+      "total": 2412,
+      "passed": 2286,
+      "failed": 126
+    },
+    "payments": {
+      "total": 2228,
+      "passed": 2173,
+      "failed": 55
+    },
+    "products": {
+      "total": 152,
+      "passed": 140,
+      "failed": 12
+    },
+    "customers": {
+      "total": 405,
+      "passed": 383,
+      "failed": 22
+    },
+    "stores": {
+      "total": 15,
+      "passed": 13,
+      "failed": 2
+    }
+  }
+}

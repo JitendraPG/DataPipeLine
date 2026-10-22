@@ -1,0 +1,11 @@
+spend_rank,customer_id,full_name,masked_email,masked_phone,loyalty_tier,city,total_orders,delivered_orders,total_spend
+1,C00136,Sanjay Bhat,sa***@example.com,96******88,Bronze,Bengaluru,10,9,8738.1
+2,C00115,Sanjay Kumar,sa***@example.com,96******85,Bronze,Bengaluru,8,8,8037.7
+3,C00283,Nikhil Rao,ni***@example.com,91******43,Bronze,Bengaluru,9,8,7934.6
+4,C00236,Sneha Naidu,sn***@example.com,90******01,Platinum,Bengaluru,12,12,7831.8
+5,C00310,Kiran Patil,ki***@example,91******35,Bronze,Bengaluru,9,8,7258.95
+6,C00071,Mahesh Pillai,ma***@example.com,91******42,Silver,Bengaluru,12,11,6933.3
+7,C00357,Arjun Naidu,ar***@example.com,**********,Bronze,Bengaluru,11,11,6637.9
+8,C00209,Kavya Pillai,ka***@example.com,98******97,Platinum,Bengaluru,8,8,6519.4
+9,C00338,Bhavana Iyer,bh***@example.com,94******05,Silver,Bengaluru,10,8,6506.55
+10,C00072,Nandini Murthy,na***@example.com,98******05,Silver,Bengaluru,11,11,6433.95

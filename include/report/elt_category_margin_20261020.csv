@@ -1,0 +1,8 @@
+category,total_quantity_sold,total_revenue,total_cost,total_gross_margin,margin_pct
+Staples,623.0,287309.45,225195.21,62114.24,21.62
+Personal Care,661.0,212362.75,166019.13,46343.62,21.82
+Household,659.0,209474.55,155325.17,54149.38,25.85
+Dairy & Bakery,755.0,177516.95,130624.9,46892.05,26.42
+Snacks & Beverages,678.0,173783.15,132626.34,41156.81,23.68
+Fruits & Vegetables,742.0,98603.7,78238.64,20365.06,20.65
+Uncategorized,82.0,39062.4,34492.8,4569.6,11.7

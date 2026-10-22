@@ -1,0 +1,572 @@
+file,row key,column,problem,quality dimension,proposed rule,severity
+customers.csv,C00355,city,Missing customer city,Completeness,city must not be null or empty,Critical
+customers.csv,C00394,city,Missing customer city,Completeness,city must not be null or empty,Critical
+customers.csv,C00233,city,Missing customer city,Completeness,city must not be null or empty,Critical
+customers.csv,C00142,city,Missing customer city,Completeness,city must not be null or empty,Critical
+customers.csv,C00328,city,Missing customer city,Completeness,city must not be null or empty,Critical
+customers.csv,C00219,city,Missing customer city,Completeness,city must not be null or empty,Critical
+customers.csv,C00103,customer_id,Duplicate primary key customer_id (C00103),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00103,customer_id,Duplicate primary key customer_id (C00103),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00252,customer_id,Duplicate primary key customer_id (C00252),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00036,customer_id,Duplicate primary key customer_id (C00036),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00226,customer_id,Duplicate primary key customer_id (C00226),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00313,customer_id,Duplicate primary key customer_id (C00313),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00252,customer_id,Duplicate primary key customer_id (C00252),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00226,customer_id,Duplicate primary key customer_id (C00226),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00036,customer_id,Duplicate primary key customer_id (C00036),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00313,customer_id,Duplicate primary key customer_id (C00313),Uniqueness,customer_id must be unique across all customer records,Critical
+customers.csv,C00132,pincode,Invalid pincode format (5600XX),Validity,pincode must match regex ^[0-9]{6}$,Critical
+customers.csv,C00083,pincode,Invalid pincode format (5600XX),Validity,pincode must match regex ^[0-9]{6}$,Critical
+customers.csv,C00166,pincode,Invalid pincode format (5600XX),Validity,pincode must match regex ^[0-9]{6}$,Critical
+customers.csv,C00400,signup_date,Future-dated customer signup date (2027-01-05),Timeliness,signup_date must not be in the future (<= run_date),Critical
+customers.csv,C00398,signup_date,Future-dated customer signup date (2026-11-12),Timeliness,signup_date must not be in the future (<= run_date),Critical
+customers.csv,C00038,signup_date,Future-dated customer signup date (2026-12-20),Timeliness,signup_date must not be in the future (<= run_date),Critical
+customers.csv,C00151,phone,Invalid phone format (996292312) - not 10 digits,Validity,phone must be exactly 10 digits,Warning
+customers.csv,C00240,phone,Invalid phone format (90917798) - not 10 digits,Validity,phone must be exactly 10 digits,Warning
+customers.csv,C00095,phone,Invalid phone format (993802612) - not 10 digits,Validity,phone must be exactly 10 digits,Warning
+customers.csv,C00357,phone,Invalid phone format (933977612) - not 10 digits,Validity,phone must be exactly 10 digits,Warning
+customers.csv,C00130,phone,Invalid phone format (999560412) - not 10 digits,Validity,phone must be exactly 10 digits,Warning
+customers.csv,C00290,phone,Invalid phone format (9804341) - not 10 digits,Validity,phone must be exactly 10 digits,Warning
+customers.csv,C00339,phone,Invalid phone format (987920612) - not 10 digits,Validity,phone must be exactly 10 digits,Warning
+customers.csv,C00337,email,Invalid or missing email format (nan),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00307,email,Invalid or missing email format (arjun.rao307example.com),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00063,email,Invalid or missing email format (prakash.pillai63@example),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00045,email,Invalid or missing email format (nan),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00363,email,Invalid or missing email format (lakshmi.naidu363example.com),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00310,email,Invalid or missing email format (kiran.patil310@example),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00327,email,Invalid or missing email format (nan),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00112,email,Invalid or missing email format (lakshmi.shetty112@example),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00193,email,Invalid or missing email format (nan),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00392,email,Invalid or missing email format (pooja.murthy392example.com),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00062,email,Invalid or missing email format (ritu.rao62example.com),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00067,email,Invalid or missing email format (manoj.sharma67example.com),Validity,email must match valid RFC standard pattern user@domain,Warning
+customers.csv,C00199,loyalty_tier,Non-standard loyalty tier casing (SILVER),Consistency,"loyalty_tier must follow standard Title Case (Bronze, Silver, Gold, Platinum)",Warning
+customers.csv,C00171,loyalty_tier,Non-standard loyalty tier casing (SILVER),Consistency,"loyalty_tier must follow standard Title Case (Bronze, Silver, Gold, Platinum)",Warning
+customers.csv,C00133,loyalty_tier,Non-standard loyalty tier casing (BRONZE),Consistency,"loyalty_tier must follow standard Title Case (Bronze, Silver, Gold, Platinum)",Warning
+customers.csv,C00032,loyalty_tier,Non-standard loyalty tier casing (bronze),Consistency,"loyalty_tier must follow standard Title Case (Bronze, Silver, Gold, Platinum)",Warning
+customers.csv,C00031,loyalty_tier,Non-standard loyalty tier casing (bronze),Consistency,"loyalty_tier must follow standard Title Case (Bronze, Silver, Gold, Platinum)",Warning
+customers.csv,C00196,loyalty_tier,Non-standard loyalty tier casing (bronze),Consistency,"loyalty_tier must follow standard Title Case (Bronze, Silver, Gold, Platinum)",Warning
+customers.csv,C00136,loyalty_tier,Non-standard loyalty tier casing (BRONZE),Consistency,"loyalty_tier must follow standard Title Case (Bronze, Silver, Gold, Platinum)",Warning
+customers.csv,C00092,loyalty_tier,Non-standard loyalty tier casing (BRONZE),Consistency,"loyalty_tier must follow standard Title Case (Bronze, Silver, Gold, Platinum)",Warning
+products.csv,P0051,category,Missing product category,Completeness,category must not be null or empty,Critical
+products.csv,P0060,category,Missing product category,Completeness,category must not be null or empty,Critical
+products.csv,P0068,category,Missing product category,Completeness,category must not be null or empty,Critical
+products.csv,P0030,product_id,Duplicate primary key product_id (P0030),Uniqueness,product_id must be unique across all product records,Critical
+products.csv,P0140,product_id,Duplicate primary key product_id (P0140),Uniqueness,product_id must be unique across all product records,Critical
+products.csv,P0030,product_id,Duplicate primary key product_id (P0030),Uniqueness,product_id must be unique across all product records,Critical
+products.csv,P0140,product_id,Duplicate primary key product_id (P0140),Uniqueness,product_id must be unique across all product records,Critical
+products.csv,P0019,cost_price,Cost price (264.0) exceeds MRP (220.0),Accuracy,cost_price must be less than or equal to mrp,Critical
+products.csv,P0073,cost_price,Cost price (334.8) exceeds MRP (279.0),Accuracy,cost_price must be less than or equal to mrp,Critical
+products.csv,P0074,cost_price,Cost price (420.0) exceeds MRP (350.0),Accuracy,cost_price must be less than or equal to mrp,Critical
+products.csv,P0109,cost_price,Cost price (162.5) exceeds MRP (-203.0),Accuracy,cost_price must be less than or equal to mrp,Critical
+products.csv,P0117,cost_price,Cost price (92.4) exceeds MRP (77.0),Accuracy,cost_price must be less than or equal to mrp,Critical
+products.csv,P0109,mrp,Negative or zero MRP (-203.0),Accuracy,mrp must be strictly greater than 0,Critical
+stores.csv,S07,zone,Missing store operating zone,Completeness,zone must not be null or empty,Critical
+stores.csv,S12,capacity_orders_per_day,Dark store capacity is zero (0),Accuracy,capacity_orders_per_day must be greater than 0,Critical
+orders.csv,ORD002255,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD000701,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD000997,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD000580,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD002019,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD002262,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD002149,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD002367,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD001332,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD001918,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD002156,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD000583,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD000790,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD000764,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD002219,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD001532,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD000022,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD001373,customer_id,Missing customer_id on order,Completeness,customer_id must not be null on orders,Critical
+orders.csv,ORD001554,delivery_minutes,Missing delivery_minutes for DELIVERED order,Completeness,DELIVERED orders must record actual delivery_minutes,Critical
+orders.csv,ORD001800,delivery_minutes,Missing delivery_minutes for DELIVERED order,Completeness,DELIVERED orders must record actual delivery_minutes,Critical
+orders.csv,ORD000731,delivery_minutes,Missing delivery_minutes for DELIVERED order,Completeness,DELIVERED orders must record actual delivery_minutes,Critical
+orders.csv,ORD001277,delivery_minutes,Missing delivery_minutes for DELIVERED order,Completeness,DELIVERED orders must record actual delivery_minutes,Critical
+orders.csv,ORD000326,delivery_minutes,Missing delivery_minutes for DELIVERED order,Completeness,DELIVERED orders must record actual delivery_minutes,Critical
+orders.csv,ORD001515,delivery_minutes,Missing delivery_minutes for DELIVERED order,Completeness,DELIVERED orders must record actual delivery_minutes,Critical
+orders.csv,ORD002229,delivery_minutes,Missing delivery_minutes for DELIVERED order,Completeness,DELIVERED orders must record actual delivery_minutes,Critical
+orders.csv,ORD000878,delivery_minutes,Missing delivery_minutes for DELIVERED order,Completeness,DELIVERED orders must record actual delivery_minutes,Critical
+orders.csv,ORD001462,order_id,Duplicate primary key order_id (ORD001462),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001326,order_id,Duplicate primary key order_id (ORD001326),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001462,order_id,Duplicate primary key order_id (ORD001462),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001434,order_id,Duplicate primary key order_id (ORD001434),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD000783,order_id,Duplicate primary key order_id (ORD000783),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001239,order_id,Duplicate primary key order_id (ORD001239),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001692,order_id,Duplicate primary key order_id (ORD001692),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001870,order_id,Duplicate primary key order_id (ORD001870),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001441,order_id,Duplicate primary key order_id (ORD001441),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001441,order_id,Duplicate primary key order_id (ORD001441),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD002129,order_id,Duplicate primary key order_id (ORD002129),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001549,order_id,Duplicate primary key order_id (ORD001549),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001692,order_id,Duplicate primary key order_id (ORD001692),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD002129,order_id,Duplicate primary key order_id (ORD002129),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001110,order_id,Duplicate primary key order_id (ORD001110),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD000539,order_id,Duplicate primary key order_id (ORD000539),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001239,order_id,Duplicate primary key order_id (ORD001239),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD000783,order_id,Duplicate primary key order_id (ORD000783),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD000539,order_id,Duplicate primary key order_id (ORD000539),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001434,order_id,Duplicate primary key order_id (ORD001434),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001326,order_id,Duplicate primary key order_id (ORD001326),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001549,order_id,Duplicate primary key order_id (ORD001549),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001870,order_id,Duplicate primary key order_id (ORD001870),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001110,order_id,Duplicate primary key order_id (ORD001110),Uniqueness,order_id must be globally unique,Critical
+orders.csv,ORD001066,order_status,Invalid order_status value (delivered),Validity,"order_status must be one of ['DELIVERED', 'CANCELLED', 'RETURNED']",Critical
+orders.csv,ORD000500,order_status,Invalid order_status value (Pending??),Validity,"order_status must be one of ['DELIVERED', 'CANCELLED', 'RETURNED']",Critical
+orders.csv,ORD000153,order_status,Invalid order_status value (delivered),Validity,"order_status must be one of ['DELIVERED', 'CANCELLED', 'RETURNED']",Critical
+orders.csv,ORD001970,order_status,Invalid order_status value (Pending??),Validity,"order_status must be one of ['DELIVERED', 'CANCELLED', 'RETURNED']",Critical
+orders.csv,ORD001637,order_status,Invalid order_status value (Pending??),Validity,"order_status must be one of ['DELIVERED', 'CANCELLED', 'RETURNED']",Critical
+orders.csv,ORD001812,payment_mode,Invalid or unstandardized payment_mode (Cashh),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD001414,payment_mode,Invalid or unstandardized payment_mode (Cashh),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD000159,payment_mode,Invalid or unstandardized payment_mode (upi),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD001364,payment_mode,Invalid or unstandardized payment_mode (CARD),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD000433,payment_mode,Invalid or unstandardized payment_mode (upi),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD002356,payment_mode,Invalid or unstandardized payment_mode (UPI ),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD001640,payment_mode,Invalid or unstandardized payment_mode (cod),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD001874,payment_mode,Invalid or unstandardized payment_mode (UPI ),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD000934,payment_mode,Invalid or unstandardized payment_mode (upi),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD000691,payment_mode,Invalid or unstandardized payment_mode (upi),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+orders.csv,ORD000403,order_ts,Unparseable order timestamp (nan),Validity,order_ts must be a valid ISO timestamp YYYY-MM-DD HH:MM:SS,Critical
+orders.csv,ORD001610,order_ts,Unparseable order timestamp (2026-13-05 11:00:00),Validity,order_ts must be a valid ISO timestamp YYYY-MM-DD HH:MM:SS,Critical
+orders.csv,ORD000534,order_ts,Unparseable order timestamp (2026-13-05 11:00:00),Validity,order_ts must be a valid ISO timestamp YYYY-MM-DD HH:MM:SS,Critical
+orders.csv,ORD000362,order_ts,Unparseable order timestamp (nan),Validity,order_ts must be a valid ISO timestamp YYYY-MM-DD HH:MM:SS,Critical
+orders.csv,ORD002012,order_ts,Unparseable order timestamp (31/09/2026 10:00),Validity,order_ts must be a valid ISO timestamp YYYY-MM-DD HH:MM:SS,Critical
+orders.csv,ORD000946,order_ts,Unparseable order timestamp (31/09/2026 10:00),Validity,order_ts must be a valid ISO timestamp YYYY-MM-DD HH:MM:SS,Critical
+orders.csv,ORD002103,discount_pct,Discount percentage out of bounds (250%),Validity,discount_pct must be between 0 and 100,Critical
+orders.csv,ORD001468,discount_pct,Discount percentage out of bounds (120%),Validity,discount_pct must be between 0 and 100,Critical
+orders.csv,ORD001237,discount_pct,Discount percentage out of bounds (150%),Validity,discount_pct must be between 0 and 100,Critical
+orders.csv,ORD000469,quantity,Quantity must be strictly positive (0),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD001296,quantity,Quantity must be strictly positive (-2),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD001459,quantity,Quantity must be strictly positive (-3),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD000867,quantity,Quantity must be strictly positive (-1),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD000462,quantity,Quantity must be strictly positive (-3),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD002360,quantity,Quantity must be strictly positive (0),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD001724,quantity,Quantity must be strictly positive (0),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD000099,quantity,Quantity must be strictly positive (0),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD001124,quantity,Quantity must be strictly positive (-1),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD001384,quantity,Quantity must be strictly positive (-1),Accuracy,quantity must be greater than 0,Critical
+orders.csv,ORD002103,order_amount,Formula mismatch: recorded order_amount (492.0) != expected (-738.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD002305,order_amount,Formula mismatch: recorded order_amount (6757.5) != expected (675.75),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD002004,order_amount,Formula mismatch: recorded order_amount (6720.0) != expected (672.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD000845,order_amount,Formula mismatch: recorded order_amount (4712.0) != expected (471.2),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD000964,order_amount,Formula mismatch: recorded order_amount (8370.0) != expected (837.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD002298,order_amount,Formula mismatch: recorded order_amount (305.1) != expected (610.2),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD002031,order_amount,Formula mismatch: recorded order_amount (3210.0) != expected (321.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD000801,order_amount,Formula mismatch: recorded order_amount (5467.5) != expected (3645.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD000880,order_amount,Formula mismatch: recorded order_amount (517.65) != expected (345.1),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD001274,order_amount,Formula mismatch: recorded order_amount (110.0) != expected (220.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD000677,order_amount,Formula mismatch: recorded order_amount (394.2) != expected (262.8),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD002223,order_amount,Formula mismatch: recorded order_amount (36.58) != expected (73.15),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD002128,order_amount,Formula mismatch: recorded order_amount (265.5) != expected (177.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD001624,order_amount,Formula mismatch: recorded order_amount (9576.0) != expected (957.6),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD002244,order_amount,Formula mismatch: recorded order_amount (108.3) != expected (72.2),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD001755,order_amount,Formula mismatch: recorded order_amount (730.0) != expected (1460.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD001468,order_amount,Formula mismatch: recorded order_amount (547.2) != expected (-136.8),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD001237,order_amount,Formula mismatch: recorded order_amount (2408.0) != expected (-1505.0),Accuracy,"order_amount must equal round(quantity * unit_price * (1 - discount_pct/100), 2)",Critical
+orders.csv,ORD001037,delivery_minutes,Implausible delivery duration (480.0 min exceeds 120 min max threshold),Accuracy,delivery_minutes for 10-minute quick commerce must be <= 120,Critical
+orders.csv,ORD002101,delivery_minutes,Implausible delivery duration (480.0 min exceeds 120 min max threshold),Accuracy,delivery_minutes for 10-minute quick commerce must be <= 120,Critical
+orders.csv,ORD000455,delivery_minutes,Implausible delivery duration (1440.0 min exceeds 120 min max threshold),Accuracy,delivery_minutes for 10-minute quick commerce must be <= 120,Critical
+orders.csv,ORD001104,delivery_minutes,Implausible delivery duration (900.0 min exceeds 120 min max threshold),Accuracy,delivery_minutes for 10-minute quick commerce must be <= 120,Critical
+orders.csv,ORD000020,delivery_minutes,Implausible delivery duration (900.0 min exceeds 120 min max threshold),Accuracy,delivery_minutes for 10-minute quick commerce must be <= 120,Critical
+orders.csv,ORD000424,delivery_minutes,Implausible delivery duration (480.0 min exceeds 120 min max threshold),Accuracy,delivery_minutes for 10-minute quick commerce must be <= 120,Critical
+orders.csv,ORD001799,store_id,Foreign key violation: store_id (S99) not found in stores.csv,Consistency,store_id must exist in stores dimension master,Critical
+orders.csv,ORD001046,store_id,Foreign key violation: store_id (S17) not found in stores.csv,Consistency,store_id must exist in stores dimension master,Critical
+orders.csv,ORD001492,store_id,Foreign key violation: store_id (S17) not found in stores.csv,Consistency,store_id must exist in stores dimension master,Critical
+orders.csv,ORD001275,store_id,Foreign key violation: store_id (S17) not found in stores.csv,Consistency,store_id must exist in stores dimension master,Critical
+orders.csv,ORD002126,store_id,Foreign key violation: store_id (S00) not found in stores.csv,Consistency,store_id must exist in stores dimension master,Critical
+orders.csv,ORD000986,product_id,Foreign key violation: product_id (P9455) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD001058,product_id,Foreign key violation: product_id (P9212) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD001685,product_id,Foreign key violation: product_id (P9816) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD000070,product_id,Foreign key violation: product_id (P9893) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD000789,product_id,Foreign key violation: product_id (P9989) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD000596,product_id,Foreign key violation: product_id (P9784) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD000134,product_id,Foreign key violation: product_id (P9822) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD000965,product_id,Foreign key violation: product_id (P9399) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD002179,product_id,Foreign key violation: product_id (P9761) not found in products.csv,Consistency,product_id must exist in products dimension master,Critical
+orders.csv,ORD002119,order_ts,Future-dated order timestamp (2027-01-01 09:00:00),Timeliness,order_ts must not be future-dated (> 2026-10-20),Critical
+orders.csv,ORD001693,order_ts,Future-dated order timestamp (2026-10-21 10:15:00),Timeliness,order_ts must not be future-dated (> 2026-10-20),Critical
+orders.csv,ORD001089,order_ts,Future-dated order timestamp (2026-10-21 10:15:00),Timeliness,order_ts must not be future-dated (> 2026-10-20),Critical
+orders.csv,ORD001121,order_ts,Future-dated order timestamp (2026-11-02 18:40:00),Timeliness,order_ts must not be future-dated (> 2026-10-20),Critical
+orders.csv,ORD001765,order_ts,Future-dated order timestamp (2027-01-01 09:00:00),Timeliness,order_ts must not be future-dated (> 2026-10-20),Critical
+orders.csv,ORD001965,order_ts,Future-dated order timestamp (2026-11-02 18:40:00),Timeliness,order_ts must not be future-dated (> 2026-10-20),Critical
+orders.csv,ORD001725,order_ts,Future-dated order timestamp (2027-01-01 09:00:00),Timeliness,order_ts must not be future-dated (> 2026-10-20),Critical
+payments.csv,PAY0001651,payment_id,Duplicate primary key payment_id (PAY0001651),Uniqueness,payment_id must be unique across all gateway payment records,Critical
+payments.csv,PAY0000755,payment_id,Duplicate primary key payment_id (PAY0000755),Uniqueness,payment_id must be unique across all gateway payment records,Critical
+payments.csv,PAY0000509,payment_id,Duplicate primary key payment_id (PAY0000509),Uniqueness,payment_id must be unique across all gateway payment records,Critical
+payments.csv,PAY0000509,payment_id,Duplicate primary key payment_id (PAY0000509),Uniqueness,payment_id must be unique across all gateway payment records,Critical
+payments.csv,PAY0002000,payment_id,Duplicate primary key payment_id (PAY0002000),Uniqueness,payment_id must be unique across all gateway payment records,Critical
+payments.csv,PAY0001651,payment_id,Duplicate primary key payment_id (PAY0001651),Uniqueness,payment_id must be unique across all gateway payment records,Critical
+payments.csv,PAY0002000,payment_id,Duplicate primary key payment_id (PAY0002000),Uniqueness,payment_id must be unique across all gateway payment records,Critical
+payments.csv,PAY0000755,payment_id,Duplicate primary key payment_id (PAY0000755),Uniqueness,payment_id must be unique across all gateway payment records,Critical
+payments.csv,PAY0002188,payment_mode,Invalid or unstandardized payment_mode (upi),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0001850,payment_mode,Invalid or unstandardized payment_mode (upi),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0001954,payment_mode,Invalid or unstandardized payment_mode (cod),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0000817,payment_mode,Invalid or unstandardized payment_mode (upi),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0001359,payment_mode,Invalid or unstandardized payment_mode (CARD),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0002208,payment_mode,Invalid or unstandardized payment_mode (upi),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0002113,payment_mode,Invalid or unstandardized payment_mode (UPI ),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0001862,payment_mode,Invalid or unstandardized payment_mode (UPI ),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0000522,payment_mode,Invalid or unstandardized payment_mode (Cashh),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0000044,payment_mode,Invalid or unstandardized payment_mode (Cashh),Validity,"payment_mode must be one of ['UPI', 'Card', 'Cash on Delivery', 'Wallet']",Critical
+payments.csv,PAY0001568,amount_paid,Non-positive amount_paid (-43.05),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0002175,amount_paid,Non-positive amount_paid (-188.7),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0000116,amount_paid,Non-positive amount_paid (0.0),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0000751,amount_paid,Non-positive amount_paid (-1593.0),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0000944,amount_paid,Non-positive amount_paid (-1279.65),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0000791,amount_paid,Non-positive amount_paid (-500.65),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0001111,amount_paid,Non-positive amount_paid (0.0),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0001322,amount_paid,Non-positive amount_paid (0.0),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0000954,amount_paid,Non-positive amount_paid (0.0),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0000737,amount_paid,Non-positive amount_paid (-394.0),Accuracy,amount_paid must be strictly positive (> 0),Critical
+payments.csv,PAY0002219,order_id,Orphan payment: order_id (ORD970544) not found in orders.csv,Consistency,order_id in gateway payments must exist in orders master,Critical
+payments.csv,PAY0002220,order_id,Orphan payment: order_id (ORD968496) not found in orders.csv,Consistency,order_id in gateway payments must exist in orders master,Critical
+payments.csv,PAY0002223,order_id,Orphan payment: order_id (ORD988106) not found in orders.csv,Consistency,order_id in gateway payments must exist in orders master,Critical
+payments.csv,PAY0002221,order_id,Orphan payment: order_id (ORD941071) not found in orders.csv,Consistency,order_id in gateway payments must exist in orders master,Critical
+payments.csv,PAY0002224,order_id,Orphan payment: order_id (ORD981600) not found in orders.csv,Consistency,order_id in gateway payments must exist in orders master,Critical
+payments.csv,PAY0002218,order_id,Orphan payment: order_id (ORD997176) not found in orders.csv,Consistency,order_id in gateway payments must exist in orders master,Critical
+payments.csv,PAY0002222,order_id,Orphan payment: order_id (ORD953136) not found in orders.csv,Consistency,order_id in gateway payments must exist in orders master,Critical
+payments.csv,PAY0002217,order_id,Orphan payment: order_id (ORD966342) not found in orders.csv,Consistency,order_id in gateway payments must exist in orders master,Critical
+payments.csv,PAY0001568,amount_paid,Payment amount mismatch: amount_paid (-43.05) != order_amount (56.95),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000354,amount_paid,Payment amount mismatch: amount_paid (455.0) != order_amount (505.0),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000779,amount_paid,Payment amount mismatch: amount_paid (2.6) != order_amount (102.6),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000323,amount_paid,Payment amount mismatch: amount_paid (182.95) != order_amount (192.95),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0001167,amount_paid,Payment amount mismatch: amount_paid (452.35) != order_amount (502.35),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0001499,amount_paid,Payment amount mismatch: amount_paid (349.3) != order_amount (374.3),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000909,amount_paid,Payment amount mismatch: amount_paid (103.0) != order_amount (203.0),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000586,amount_paid,Payment amount mismatch: amount_paid (2.6) != order_amount (102.6),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000161,amount_paid,Payment amount mismatch: amount_paid (232.2) != order_amount (282.2),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0002183,amount_paid,Payment amount mismatch: amount_paid (955.4) != order_amount (980.4),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000044,amount_paid,Payment amount mismatch: amount_paid (353.0) != order_amount (378.0),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0001813,amount_paid,Payment amount mismatch: amount_paid (402.4) != order_amount (502.4),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0001139,amount_paid,Payment amount mismatch: amount_paid (353.0) != order_amount (378.0),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000429,amount_paid,Payment amount mismatch: amount_paid (218.2) != order_amount (243.2),Consistency,"For SUCCESS payments, amount_paid must equal order_amount",Critical
+payments.csv,PAY0000396,payment_ts,Future-dated payment timestamp (2026-11-02 18:40:52),Timeliness,payment_ts must not be in the future (> 2026-10-20),Critical
+payments.csv,PAY0000127,payment_ts,Future-dated payment timestamp (2027-01-01 09:01:37),Timeliness,payment_ts must not be in the future (> 2026-10-20),Critical
+payments.csv,PAY0001908,payment_ts,Future-dated payment timestamp (2027-01-01 09:01:46),Timeliness,payment_ts must not be in the future (> 2026-10-20),Critical
+payments.csv,PAY0001037,payment_ts,Future-dated payment timestamp (2027-01-01 09:01:02),Timeliness,payment_ts must not be in the future (> 2026-10-20),Critical
+payments.csv,PAY0000337,payment_ts,Future-dated payment timestamp (2026-10-21 10:15:38),Timeliness,payment_ts must not be in the future (> 2026-10-20),Critical
+payments.csv,PAY0001488,payment_ts,Future-dated payment timestamp (2026-11-02 18:41:31),Timeliness,payment_ts must not be in the future (> 2026-10-20),Critical
+payments.csv,PAY0000267,payment_ts,Future-dated payment timestamp (2026-10-21 10:16:40),Timeliness,payment_ts must not be in the future (> 2026-10-20),Critical
+payments.csv,PAY0000133,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001514,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001852,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001437,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000009,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000263,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001650,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001983,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000330,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001450,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001097,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001260,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001131,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000810,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000367,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001617,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000326,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000412,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001141,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002195,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001771,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000977,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001274,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000396,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000959,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000753,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001072,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001778,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001043,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001210,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001053,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000591,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000622,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002106,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000902,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000167,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000995,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000440,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000642,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001583,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001842,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001846,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000797,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001628,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000531,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002046,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000659,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000614,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000127,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001888,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001684,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000316,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002122,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001451,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001511,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000265,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001477,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000681,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000668,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001315,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001828,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000048,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001311,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001416,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001460,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002154,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000762,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000701,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002114,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000234,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000084,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000949,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001608,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001256,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000833,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002155,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001991,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000547,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000679,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001025,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000495,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000453,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000610,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001633,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000497,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001685,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001821,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001860,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001135,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000196,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001951,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000094,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001866,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000452,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002172,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000389,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002179,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000998,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002029,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001360,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000789,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002127,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000865,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001167,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001557,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000741,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001745,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001415,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000602,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001579,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002062,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001352,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001817,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001542,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001627,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002003,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001869,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001379,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000520,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000990,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001251,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000437,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001098,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001592,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001877,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001368,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001963,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001149,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001367,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000087,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001761,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000349,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001585,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001334,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001527,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001890,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001435,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000617,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002162,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000146,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000030,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002023,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000410,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001032,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000380,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001596,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001498,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001004,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000471,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001066,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001799,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000538,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001320,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000577,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002017,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001561,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001118,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001318,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001630,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001744,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000588,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002024,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001634,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001918,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000155,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001449,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000328,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000178,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000544,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002152,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002136,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000542,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000504,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000626,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001045,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001938,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001492,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001737,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001560,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001214,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000883,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001080,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000251,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001156,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000505,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000289,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000885,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001186,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002008,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000160,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000098,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001902,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000224,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000725,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002190,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001292,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000433,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000385,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002196,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001391,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001948,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002049,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000382,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000386,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001349,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000415,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001409,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000870,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000518,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002082,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000605,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000696,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000165,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000402,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001903,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001632,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001185,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000935,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001217,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001524,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001229,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000713,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000217,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002209,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001317,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002153,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000796,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001488,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001755,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000882,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000190,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001397,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000209,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002181,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000208,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001240,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000411,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000570,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001060,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001202,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002143,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001855,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001494,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000744,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001984,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000863,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000469,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001404,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000100,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000747,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001522,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002059,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000187,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001147,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000920,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000154,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002189,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001719,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001691,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001178,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000812,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002079,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001754,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001780,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000445,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001268,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001825,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001580,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001431,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000624,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000436,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001463,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000848,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001873,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001063,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002132,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000654,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000288,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002100,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002130,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000305,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002203,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000500,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001150,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000842,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001994,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000721,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001998,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000881,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000557,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002145,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001753,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002137,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001497,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0000078,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002011,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001335,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001772,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001432,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0002028,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+payments.csv,PAY0001928,gateway_ref,Missing gateway transaction reference number,Completeness,gateway_ref should be recorded for audit trail,Warning
+orders_2026-10-01_increment.csv,ORD000017,order_id,Cross-batch duplicate order_id (ORD000017) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD000271,order_id,Cross-batch duplicate order_id (ORD000271) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD000332,order_id,Cross-batch duplicate order_id (ORD000332) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD000337,order_id,Cross-batch duplicate order_id (ORD000337) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD000584,order_id,Cross-batch duplicate order_id (ORD000584) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD000708,order_id,Cross-batch duplicate order_id (ORD000708) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD000822,order_id,Cross-batch duplicate order_id (ORD000822) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD001025,order_id,Cross-batch duplicate order_id (ORD001025) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD001067,order_id,Cross-batch duplicate order_id (ORD001067) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD001990,order_id,Cross-batch duplicate order_id (ORD001990) with updated status (RETURNED) - potential double counting if appended without upsert,Consistency,Incremental batches must use MERGE / upsert on order_id to overwrite late status changes rather than duplicate rows,Critical
+orders_2026-10-01_increment.csv,ORD000017,order_ts,Out-of-period historical timestamp (2026-09-01 09:38:13) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD000271,order_ts,Out-of-period historical timestamp (2026-09-04 20:42:53) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD000332,order_ts,Out-of-period historical timestamp (2026-09-05 16:48:59) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD000337,order_ts,Out-of-period historical timestamp (2026-09-05 17:54:32) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD000584,order_ts,Out-of-period historical timestamp (2026-09-08 20:17:36) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD000708,order_ts,Out-of-period historical timestamp (2026-09-10 12:44:47) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD000822,order_ts,Out-of-period historical timestamp (2026-09-11 22:25:24) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD001025,order_ts,Out-of-period historical timestamp (2026-09-14 10:26:30) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD001067,order_ts,Out-of-period historical timestamp (2026-09-14 19:29:01) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
+orders_2026-10-01_increment.csv,ORD001990,order_ts,Out-of-period historical timestamp (2026-09-25 20:53:03) in next-day increment batch,Timeliness,Late-arriving facts must be audited to verify retroactive financial impact on prior closed periods,Warning
