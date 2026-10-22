@@ -1,3 +1,6 @@
+Code is located in below github repo:
+https://github.com/JitendraPG/DataPipeLine
+
 Problem Discovery: All the 6 *.csv files are evaludated and data issue identified.The issue is logged
 in file reports/jitendra/DataIssues.csv
 Answer to part C:
@@ -256,3 +259,5 @@ PS C:\worktrees\assignment\IIT_Roorkie_CEC_Futurenece_Data_Pipeline_to_ML_Model\
 Part G: Recomendation to the client
    
 NammaMart_ELT_Executive_Memo.docx
+
+Note: I am not able to run airflow as working in office laptop virualized environment and desktop docker is not working.
